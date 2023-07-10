@@ -1,0 +1,9 @@
+<form #createForm="ngForm" (ngSubmit)="addOperation(createForm); createForm.resetForm()" validate>
+    <select name="opType" id="opType">
+        <option value="+" selected>+</option>
+        <option value="-">-</option>
+    </select>
+    <input type="text" name="description" id="description" placeholder="Agregar descripción" [(ngModel)]="newOperation.description">
+    <input type="number" name="amount" id="amount" [(ngModel)]="newOperation.amount">
+    <button id="validate">validar</button>
+</form>

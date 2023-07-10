@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OperationInterface } from './interfaces/operation.interface';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'controlDePresupuesto';
+  incomeListParent:OperationInterface[] = [];
+  expensesListParent:OperationInterface[] = [];
+  incomeAmountParent:number;
+  expensesAmountParent:number;
 }

@@ -1,0 +1,7 @@
+<th>GASTOS</th>
+    <ng-container *ngFor="let operation of expensesList">
+        <tr>
+            <td>{{operation.description}}</td>
+            <td>{{operation.amount}}</td>
+        </tr>
+    </ng-container>

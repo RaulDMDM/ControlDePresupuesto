@@ -1,0 +1,9 @@
+<table>
+    <th>INGRESOS</th>
+    <ng-container *ngFor="let operation of incomeList">
+        <tr>
+            <td>{{operation.description}}</td>
+            <td>{{operation.amount}}</td>
+        </tr>
+    </ng-container>
+</table>
