@@ -1,0 +1,30 @@
+h2{
+    margin: 0;
+    font-family: 'roboto';
+}
+h1{
+    margin:0;
+    padding-top: 10px;
+    font-family: 'roboto-bold';
+}
+
+.card{
+    font-family: 'roboto';
+    background-color: rgba(240, 248, 255, 0.575);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#income{
+    background-color: rgba(94, 199, 94, 0.582);
+    flex-direction: row;
+    justify-content: space-between;
+}
+#expenses{
+    background-color: rgba(245, 114, 114, 0.507);
+    flex-direction: row;
+    justify-content: space-between;
+}

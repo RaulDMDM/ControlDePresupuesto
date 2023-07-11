@@ -1,0 +1,27 @@
+
+
+body{
+    display: flex;
+    height: 65vh;
+    width: auto;
+    background-color: #fafafac2;
+    
+}
+header{
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('../assets/img/headerBackground.webp');
+    background-position: center;
+    background-size: cover;
+    border-bottom: 3px solid #640469;
+    
+}
+
+#tables{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

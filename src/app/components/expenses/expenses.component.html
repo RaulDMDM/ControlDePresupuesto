@@ -1,7 +1,18 @@
-<th>GASTOS</th>
-    <ng-container *ngFor="let operation of expensesList">
-        <tr>
-            <td>{{operation.description}}</td>
-            <td>{{operation.amount}}</td>
-        </tr>
-    </ng-container>
+<table class="table">
+  <th colspan="2">GASTOS</th>
+  <ng-container *ngFor="let operation of expensesList">
+    <tr>
+      <td style="text-align: left; padding-left: 10px">{{ operation.description }}</td>
+      <td 
+        style="
+          font-weight: bold;
+          text-align: right;
+          padding-right: 10px;
+          color: red; width: 30%;
+        "
+      >
+        - {{ operation.amount }} €
+      </td>
+    </tr>
+  </ng-container>
+</table>

@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: roboto-bold;
+    src: url('src/assets/fonts/RobotoCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('src/assets/fonts/RobotoCondensed-Regular.ttf');
+}
+
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.table{
+    margin-top: 20px;
+    font-family: 'roboto';
+    width: 20vw;
+    text-align: center;
+    border-radius: 5px;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(218, 218, 218);
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(206, 206, 206, 0.397);
+}

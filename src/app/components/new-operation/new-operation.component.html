@@ -1,9 +1,27 @@
-<form #createForm="ngForm" (ngSubmit)="addOperation(createForm); createForm.resetForm()" validate>
-    <select name="opType" id="opType">
-        <option value="+" selected>+</option>
-        <option value="-">-</option>
-    </select>
-    <input type="text" name="description" id="description" placeholder="Agregar descripción" [(ngModel)]="newOperation.description">
-    <input type="number" name="amount" id="amount" [(ngModel)]="newOperation.amount">
-    <button id="validate">validar</button>
+<form
+  #createForm="ngForm"
+  (ngSubmit)="addOperation(createForm); createForm.resetForm()"
+  validate
+>
+  <select name="opType" id="opType" class="inputBox">
+    <option value="+" selected>+</option>
+    <option value="-">-</option>
+  </select>
+  <input
+    type="text"
+    name="description"
+    id="description"
+    placeholder="Agregar descripción"
+    class="inputBox"
+    [(ngModel)]="newOperation.description"
+  />
+  <input
+    type="number"
+    name="amount"
+    id="amount"
+    class="inputBox"
+    placeholder="0 €"
+    [(ngModel)]="newOperation.amount"
+  />
+  <button id="validate"><img src="../../../assets/img/check.svg" alt="check" id="check" name="ngForm"></button>
 </form>

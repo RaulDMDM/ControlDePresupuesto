@@ -1,6 +1,16 @@
-<h2>Presupuesto disponible</h2>
-<h1>{{total}}</h1>
-<div>
-  <div id="income">Total ingresos {{incomeAmount}}</div>
-  <div id="expenses">Total gastos {{expensesAmount}}</div>
+<div class="card">
+  <h2>Presupuesto disponible</h2>
+  <h1>{{ total }} €</h1>
+</div>
+<div class="card">
+  <div id="income" class="card">
+    <span>Ingresos</span>
+    <span style="color: green; font-weight: bold">+ {{ incomeAmount }} €</span>
+  </div>
+  <div id="expenses" class="card">
+    <span>Gastos</span>
+    <span style="color: rgb(255, 0, 0); font-weight: bold"
+      >- {{ expensesAmount }} €</span
+    >
+  </div>
 </div>
