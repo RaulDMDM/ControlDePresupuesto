@@ -1,11 +1,14 @@
+
 h2{
     margin: 0;
     font-family: 'roboto';
+    color: rgb(49, 49, 49);
 }
 h1{
     margin:0;
     padding-top: 10px;
-    font-family: 'roboto-bold';
+    font-family: 'roboto-bold';   
+    color: rgb(49, 49, 49);
 }
 
 .card{
@@ -28,3 +31,21 @@ h1{
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+@media (max-width: 423px) {
+    .card{
+        scale: 90%;
+    }
+}
+
+@media (max-height: 700px) {
+    .card{
+        scale: 90%;
+        padding-bottom: 5px;
+        
+    }
+}
+
+
+

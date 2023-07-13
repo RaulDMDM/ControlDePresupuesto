@@ -4,7 +4,7 @@ body{
     display: flex;
     height: 65vh;
     width: auto;
-    background-color: #fafafac2;
+    background: url("../assets/img/bodyBackground.webp");
     
 }
 header{
@@ -16,7 +16,6 @@ header{
     background: url('../assets/img/headerBackground.webp');
     background-position: center;
     background-size: cover;
-    border-bottom: 3px solid #640469;
     
 }
 
@@ -25,3 +24,12 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+@media (max-width: 423px) {
+    #tables{
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+    }
+}
+

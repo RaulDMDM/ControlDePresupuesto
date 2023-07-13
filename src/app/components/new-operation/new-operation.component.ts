@@ -15,6 +15,7 @@ export class NewOperationComponent implements OnInit {
   incomeAmount:number = 0;
   expensesAmount:number = 0;
   newOperation: OperationInterface = {
+    date:'',
     description:'',
     amount:undefined
   };
@@ -33,7 +34,9 @@ export class NewOperationComponent implements OnInit {
 
   addOperation(newOperationForm:NgForm){
     let opType = (<HTMLInputElement>document.getElementById("opType")).value
+    
     this.newOperation.amount = Number(this.newOperation.amount?.toFixed(2));
+    this.newOperation.date = new Date().toLocaleString();
     console.log(this.newOperation.amount)
     if (opType == '+'){
       this.operationService.setIncome(this.newOperation).subscribe(res =>{

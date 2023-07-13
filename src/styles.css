@@ -21,7 +21,7 @@ html, body{
 .table{
     margin-top: 20px;
     font-family: 'roboto';
-    width: 20vw;
+    width: 30vw;
     text-align: center;
     border-radius: 5px;
 }
@@ -32,4 +32,19 @@ table tr:nth-child(odd) {
 
 table tr:nth-child(even) {
     background-color: rgba(206, 206, 206, 0.397);
+}
+
+@media (max-width: 423px) {
+    .table{
+        width: 90vw;
+        font-size: 3vw;
+        
+    }
+}
+
+@media (max-width: 1170px) {
+    .table{
+        font-size: 0.7em;
+        
+    }
 }
